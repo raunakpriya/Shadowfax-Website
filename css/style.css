@@ -66,9 +66,33 @@ ul li.button a{
     position: relative;
     height: 100vh;
     width: 205vh;
+    
    
     
     
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.log:hover .dropdown-content {display: block;}
+.dropbtn {
+   
+    
+    padding: 8px;
+    font-size: 16px;
+    border: none;
 }
 .first h2 {
     font-size: 34px;
@@ -92,10 +116,11 @@ ul li.button a{
     transform: translate(-50%, -50%);
     color: lavenderblush;
     padding: 8px 40px;
+    padding-top: 200px;
   }
 .centered h2 {
     display: block;
-    font-size: 1.5em;
+    font-size: 2vw;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -104,43 +129,41 @@ ul li.button a{
     text-align: center;
     background-image: url(https://shadowfax.in/assets/images/now_page/txtbg.png);
 }
+
 .topBannerSection .bannerTxt {
-    margin-top: 280px;
+    margin-top: 360px;
     text-align: center;
 }
 h2 {
-    font-size: 34px;
+    font-size: 40px;
     letter-spacing: .25px;
     font-weight: 600;
     line-height: 40px;
     color: #4a4a4a;
     max-width: 500px;
-    margin: 0 auto 10px;
+    margin: auto;
     background-image: url(../../../assets/images/now_page/txtbg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 50%;
     padding: 8px 40px;
+    margin-top: 50%;
+    
 }
 
 h1 {
     font-family: Arial Black;
-    font-size: 80px;
+    font-size: 2.5vw;
     line-height: 50px;
     color: #fff;
     font-weight: 500;
-    margin: 10px 0;
+    margin:10px 0;
     text-shadow: 0 0 5px rgba(0,0,0,.6);
+    text-align: center ;
 }
 
-h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.partner{
+    background-color: rgba(0,0,0,.4 );
 }
 .partner h3{
     display: block;
@@ -150,21 +173,27 @@ h1 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    text-align: center;
+}
+.links{
+    align-content: center;
+    
 }
 .links a {
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border: 1px solid #ea5333;
     background-color: transparent;
     color: #FFFF;
     border-radius: 4px;
     background: #ea5333;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-top: 15px;
     display: inline-block;
     font-family: Roboto,Helvetica Neue,sans-serif;
     font-weight: 400;
     text-decoration: none;
+    align-content: center;
 }
 .works h1 {
     font-size: 34px;
@@ -192,12 +221,16 @@ p {
     padding-left: 15%;
     padding-right: 15%;
 }
+.video{
+    width: 75%;
+    height: auto;
+}
 iframe {
     margin: 20px 0 0;
-    width: 620px;
+    
     height: 350px;
     max-width: 100%;
-    padding-left: 30%;
+    padding-left: 40%;
 }
 .services h1{
     font-size: 34px;
@@ -225,11 +258,12 @@ iframe {
     margin: 10px 0 40px;
 }
 .delivery{
-    padding-left:10%;
+   
     box-sizing: border-box;
     display: flex;
+    max-width: 100%;
 }
-.d1{
+.d1:hover{
     box-shadow: 0 2px 16px 0 hsla(0,0%,81%,.5);
     background-color: #fff;
     border-radius: 4px;
@@ -238,7 +272,8 @@ iframe {
     max-width: 300px;
     cursor: pointer;
     position: relative;
-    transition: all .2s ease-in;
+    transition: 1s  ;
+    transform:scale(1.2);
 }
 .d1 img {
     height: 80px;
@@ -297,19 +332,62 @@ iframe {
     margin: 20px 0 0;
     text-shadow: none;
 }
+.clients{
+    max-width: 1000px;
+    position: relative;
+    padding-left: 10%;
 
-.bewakoof img{
-    max-width: 100%;
-    padding-left: 40%;
 }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.swiggy{
+    display: none;
+    float: center;
+}
+
 .swiggy img{
     max-width: 100%;
     padding-left: 40%;
 }
-.curefit img{
-    max-width: 100%;
-    padding-left: 40%;
-}
+
 .dots li button {
     font-size: 0;
     line-height: 0;
@@ -322,7 +400,7 @@ iframe {
 }
 .source img{
 
-    max-width: 100%;
+    max-width: 75%;
     padding-left: 20%;
 }
 .more{
@@ -342,8 +420,8 @@ iframe {
     margin-bottom: 10px;
     margin-top: 20px;
     height: 30vh;
-    
     text-align: center;
+    max-width: 100%;
     
     
 }
@@ -355,6 +433,7 @@ iframe {
     text-align: center;
     position: relative;
     align-content: center;
+    max-width: 100%;
 }
 .wrap img{
     height: 75px;
@@ -371,16 +450,28 @@ iframe {
     text-align: center;
 }
 .awards {
-    padding: 50px 0 25px;
-    background-image: url(https://shadowfax.in/assets/images/now_page/awards_other.jpg);
+    padding: 70px 0 0px;
+    background-image: url(https://shadowfax.in/assets/images/insta_page/Awards_BG.png);
     background-size: 100% 100%;
-    
+    background-repeat:no-repeat;
     display: block;
-    height: 400px;
+    height: auto;
+}
+
+.sec{
+    width: 75%;
+    height:auto
+}
+.sec{
+    margin-left:32  0px;
 }
 .awardsWrap {
-    display: inline-block;
-    width: calc(100% / 2 - 10px);
+    display: inline;
+    max-height: 30px;
+    
+   
+    
+   
     
 
 }
@@ -510,6 +601,7 @@ h4 {
     margin-left: 0em;
     cursor: pointer;
     text-align: left;
+    margin-top: auto;
 } 
 .Second h2 {
     color: rgba(0,0,0,.87);
@@ -517,7 +609,7 @@ h4 {
     font-weight: 600;
     letter-spacing: .25px;
     line-height: 24px;
-    
+    margin-top: auto;
     cursor: pointer;
     text-align: left;
 }
@@ -574,30 +666,80 @@ h4 {
 }
 .inks{
     color:#fff;
-    
-    margin-bottom:40px;
-    font-weight: 300;
     display: inline-block;
+    font-weight: 300;
+    
+    
+    
 }
-.footer_links-hide{
+._links-hide{
     color:#fff;
-    margin-bottom:40px;
+    
     font-weight: 300;
     text-decoration: none;
+    display: inline-block;
+    margin-left: 120px;
+    
+    border-spacing: 2em;
+    
 }
-.footer_links a {
+._links{
+    color:#fff;
+    
+    font-weight: 300;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 60px;
+}
+._links a {
     
     
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
 }
-.footer_links-hide  h6 {
+._links-hide a {
+    
+    
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+._links-hide  h6 {
     margin: 0 0 10px;
+    margin-top: 60px;
     opacity: .3;
     color: #fff;
     font-family: Roboto;
     font-size: 16px;
     line-height: 20px;
+    text-decoration: none;
 }
 
+.last{
+    align-items: center;
+    align-content: center;
+    max-width: 100%;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 35%;
+    padding-bottom: 0%;
+    
+}
+.last a{
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+    padding-top: 50%;
+    border-spacing: 10 em;
+    margin-bottom: 2px;
+    margin-top: 5px;
+
+}

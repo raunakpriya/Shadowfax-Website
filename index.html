@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadowfax</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -12,9 +15,28 @@
             <img src="https://shadowfax.in/assets/images/logo/sfx_logo_new.png">
             <ul>
                 <li><a href="#"><b>ABOUT US</b></a></li>
-                <li><a href="#"><b>SERVICES</b></a>
+                <li>
+                    <div class="log">
+
+                        <button class="dropbtn"><a href="#"><b>SERVICES</b></a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Hyperlocal Delivery</a>
+                            <a href="#">Same-day-delivery</a>
+                            <a href="#">Next-day-delivery</a>
+                        </div>
+                    </div>
                 </li>
-                <li><a href="#"><b>CATEGORIES</b></a></li>
+                <li>
+                    <div class="log">
+
+                    <button class="dropbtn"><a href="#"><b>CATEGORIES</b></a></button>
+                    <div class="dropdown-content">
+                        <a href="#">FOOD</a>
+                        <a href="#">PHARMA</a>
+                        <a href="#">GROCERY</a>
+                        <a href="#">E-COMMERCE DELIVERIES</a>
+                        <a href="#">E-COMMERCE RETURN LOGISTICS</a>
+                    </div>
                 <li><a href="#"><b>NEWSROOM</b></a></li>
                 <li><a href="#"><b>CONTACT US</b></a></li>
                 <li><a href="#"><b>TRACK ORDER</b></a></li>
@@ -22,7 +44,7 @@
             </ul>
         </div>
         <div class="main">
-            <img src="https://shadowfax.in/assets/images/banners/banner.jpg">
+            <img src="https://shadowfax.in/assets/images/banners/banner.jpg" style="width:100%;">
             <div class="centered">
                 <h2><b>Building India's Fastest</b></h2>
                 <h1>Last Mile Delivery Network</h1>
@@ -89,9 +111,9 @@
                 One choice for many brands
             </h1>
             <div class="sep"></div>
-            <div  class="clients" autoplay autoplayspeed="2000" arrows="false" dots="true">
+            <div  class="clients" >
                 <div class="swiggy">
-                    <img src="https://shadowfax.in/assets/images/news/Swiggy.png" style="height: 60px;" alt="First slide">
+                    <img src="https://shadowfax.in/assets/images/news/Swiggy.png" style="height: 60px;" alt="First slide" style="width:100%;">
 
                 
                 
@@ -99,28 +121,33 @@
                     <p><span>- Radhesyam</span>
                         ", Swiggy"</p>
                 </div>
-                <div class="bewakoof">
-                    <img src="https://shadowfax.in/assets/images/news/bewakoof-logo-og.png" style="height:35px" alt="Second Slide">
+                <div class="swiggy">
+                    <img src="https://shadowfax.in/assets/images/news/bewakoof-logo-og.png" style="height:35px" alt="Second Slide" style="width:100%;">
 
                 
                     <p>I would like you to know how pleased we are with Shadowfax's effective service. Hope to have a sustainable working relationship with Shadowfax for long!</p>
                     <p><span>- Akhil Srivatsan</span>
                         ",Bewakoof"</p>
                 </div>
-                <div class="curefit">
-                    <img src="https://shadowfax.in/assets/images/news/curefit_logo.png" style="height:60px" alt="Third slide">
+                <div class="swiggy">
+                    <img src="https://shadowfax.in/assets/images/news/curefit_logo.png" style="height:60px" alt="Third slide" style="width:100%;">
 
                 
                     <p>The service provided by Shadowfax’s dedicated workforce has made our job easy and has helped us to reach out to our customers. Their on-time delivery has helped in keeping our customers happy.</p>
                     <p><span>- Dilip verma</span>
                         ",Curefit"</p>
                 </div>
-                <ul class="dots">
-                    <li data target="#clients" data-slide-to="0" class="active"></li>
-                    <li data target="#clients" data-slide-to="1"></li>
-                    <li data target="#clients" data-slide-to="2"></li>
-                </ul>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+                
            <div class="param">
                <p>Hundreds of esteemed clients from the food, pharma, grocery and other businesses trust Shadowfax for delivery services in India.</p>
            </div> 
@@ -168,13 +195,14 @@
                 <h1>Awards</h1>
                 <div class="sep"></div>
             </div>
-            <div layout="row">
+            <div layout="row" class="sec">
                 <div class="awardsWrap">
                     <img src="https://shadowfax.in/assets/images/now_page/awards_1.png">
                 </div>
                 <div class="awardsWrap">
                     <img src="https://shadowfax.in/assets/images/now_page/awards_2.png">
                 </div>
+                <br>
                 <div class="awardsWrap">
                     <img src="https://shadowfax.in/assets/images/now_page/awards_3.png">
                 </div>
@@ -182,15 +210,16 @@
                     <img src="https://shadowfax.in/assets/images/now_page/awards_4.png">
                 </div>
             </div>
-
         </div>
+        <br>
+        <br>
         <div class="new">
             <h1>What's new at Shadowfax</h1>
             <div class="sep"></div>
         </div>
         <div class="OneMore">
             <div class="First">
-                <img src="https://shadowfax.in/assets/images/now_page/news1.jpg">
+                <img src="https://shadowfax.in/assets/images/now_page/news1.jpg" style="width:100%;">
                 <h4>NEWS & BLOG</h4>
                 <div class="sepr"></div>
                 <h2>Newsroom for the discussion of lean logistics and supply chain best practices and technologies.</h2>
@@ -199,7 +228,7 @@
                 </a>
             </div>
             <div class="Second">
-                <img src="https://shadowfax.in/assets/images/now_page/news2.jpg">
+                <img src="https://shadowfax.in/assets/images/now_page/news2.jpg" style="width:100%;">
                 <h4>INNOVATION</h4>
                 <div class="sepr"></div>
                 <h2>Read about the emerging technologies shaping the future of logistics.</h2>                
@@ -232,34 +261,66 @@
 
             </div>
             <div class="inks">
-                <div class="footer_links">
+                <div class="_links">
+                
+
                     <a href="https://shadowfax.in/">Home</a>
                     <a href="https://shadowfax.in/about-us">About Us</a>
                     <a href="https://shadowfax.in/news">Newsroom</a>
                     <a href="https://shadowfax.in/careers">Careers</a>
                     <a href="https://shadowfax.in/contact-us">Contact Us</a>
+                    
                 </div>
-                <div class="footer_links-hide">
+                <div class="_links-hide">
+                    
                     <h6>Services</h6>
+                    
                     <a href="https://shadowfax.in/services/hyperlocal-delivery">Hyperlocal Delivery</a>
                     <a href="https://shadowfax.in/services/same-day-delivery">Same Day Delivery</a>
                     <a href="https://shadowfax.in/services/next-day-delivery">Next Day Delivery</a>
+                    
                 </div>
-                <div class="footer_links-hide">
+                <div class="_links-hide">
+                    
                     <h6>Categories</h6>
+                    
                     <a href="https://shadowfax.in/services/hyperlocal-food-delivery">Food Delivery</a>
                     <a href="https://shadowfax.in/services/hyperlocal-pharma-delivery">Medicine Delivery</a>
                     <a href="#">Grocery Delivery</a>
                     <a href="https://shadowfax.in/services/next-day-forward-logistics">E-commerce deliveries</a>
                     <a href="https://shadowfax.in/services/same-day-reverse-logistics">E-commerce return logistics</a>
+                    
                 </div>
-                <div class="footer_links-hide">
+                <div class="_links-hide">
+                    
                     <h6>Partner with us</h6>
                     <a href="https://shadowfax.in/delivery-partners-job">Join as Delivery Partner</a>
                     <a href="https://shadowfax.in/merchant-signup">Join as Merchant</a>
+                    
                 </div>
             </div>
+            <div class="last">
+                <a href="#">Copyright 2019 @ Shadowfax |</a>
+                <a href="https://shadowfax.in/privacy.html" target="blank">Privacy Policy |</a>
+                <a href="https://shdowfax.in/terms.html" target="blank">Terms of Use</a>
+            </div>
         </div>
-    </header>       
+    </header>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("swiggy");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+             }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>  
 </body>
 </html>
